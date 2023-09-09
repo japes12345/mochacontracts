@@ -6917,6 +6917,11 @@ socket.io@0.9.14:
   optionalDependencies:
     redis "0.7.3"
 
+solady@^0.0.121:
+  version "0.0.121"
+  resolved "https://registry.yarnpkg.com/solady/-/solady-0.0.121.tgz#93cf6ef50733139af6352a380a429515cfedabd3"
+  integrity sha512-Z+iFIhQSKetn3L6fY47LWqWOZtJqrq53FM1t9AtBkI3yCZ/biLbHhRnhQgX0A2lWzv/Kzfsb/gR4UxlB5IQWuA==
+
 solc@0.7.3:
   version "0.7.3"
   resolved "https://registry.npmjs.org/solc/-/solc-0.7.3.tgz"
