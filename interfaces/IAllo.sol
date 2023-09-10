@@ -104,6 +104,16 @@ interface IAllo {
     /// ==== External/Public Functions =====
     /// ====================================
 
+    function createPoolWithCustomStrategy(
+        bytes32 _profileId,
+        address _strategy,
+        bytes memory _initStrategyData,
+        address _token,
+        uint256 _amount,
+        Metadata memory _metadata,
+        address[] memory _managers
+    ) external payable;
+
     /// @notice Initialize the Allo contract
     /// @param _registry Address of the registry contract
     /// @param _treasury Address of the treasury

@@ -100,6 +100,28 @@ Registers a batch of recipients.
 |---|---|---|
 | _0 | address[] | undefined |
 
+### createPoolWithCustomStrategy
+
+```solidity
+function createPoolWithCustomStrategy(bytes32 _profileId, address _strategy, bytes _initStrategyData, address _token, uint256 _amount, Metadata _metadata, address[] _managers) external payable
+```
+
+
+
+
+
+#### Parameters
+
+| Name | Type | Description |
+|---|---|---|
+| _profileId | bytes32 | undefined |
+| _strategy | address | undefined |
+| _initStrategyData | bytes | undefined |
+| _token | address | undefined |
+| _amount | uint256 | undefined |
+| _metadata | Metadata | undefined |
+| _managers | address[] | undefined |
+
 ### distribute
 
 ```solidity

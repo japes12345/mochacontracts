@@ -8,6 +8,8 @@ require("solidity-coverage")
 require('@primitivefi/hardhat-dodoc');
 
 const MAINNET_RPC_URL = process.env.MAINNET_RPC_URL + process.env.INFURA_API_KEY || "https://nowhere"
+const OPTIMISM_GOERLI_RPC_URL = process.env.OPTIMISM_GOERLI_RPC_URL + process.env.INFURA_API_KEY || "https://nowhere"
+
 const ARBITRUM_RPC_URL = process.env.ARBITRUM_RPC_URL + process.env.INFURA_API_KEY || "https://nowhere"
 const SCROLL_SEPOLIA_RPC_URL = process.env.SCROLL_SEPOLIA_RPC_URL || "https://nowhere"
 const ARBITRUM_GOERLI_RPC_URL = process.env.ARBITRUM_GOERLI_RPC_URL + process.env.INFURA_API_KEY || "https://nowhere"
@@ -39,6 +41,11 @@ module.exports = {
       url: ARBITRUM_GOERLI_RPC_URL,
       accounts: [PRIVATE_KEY],
       chainId: 421613,
+    },
+    optimismgoerli: {
+      url: OPTIMISM_GOERLI_RPC_URL,
+      accounts: [PRIVATE_KEY],
+      chainId: 420,
     },
     
     scrollsepolia: {
